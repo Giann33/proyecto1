@@ -1,6 +1,8 @@
 class Persistencia:
     listaBodegas = []
     listaDistribuidores = []
+    listaArticulos = []
+
 
     @classmethod
     def agregarBodega(self, objeto):
@@ -17,3 +19,11 @@ class Persistencia:
     @classmethod
     def obtenerDistribuidores(self):
         return self.listaDistribuidores
+    
+    @classmethod
+    def agregarAtriculos(self, objeto):
+        self.listaArticulos.append(objeto)
+
+    @classmethod
+    def obtenerArticulos(self):
+        return self.listaArticulos
