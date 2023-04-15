@@ -9,4 +9,9 @@ class bodega:
         self.idbodega = None   
         self.limitebodega = None   
 
-        
+class artiuclo:
+    def __init__(self) -> None:
+        self.nombrearticulo = None
+        self.idarticulo = None
+        self.descripcionarticulo = None
+        self.cantidadarticulo = None
