@@ -1,6 +1,6 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 from UI.uiMainWindow import Ui_MainWindow
-from Application.Articulos.moduloArticulos import FrmAgregarArticulos
+from Application.Articulos.moduloArticulos import FrmAgregarArticulo
 from Application.Bodegas.moduloBodegas import *
 from Application.Distribuidores import *
 
@@ -22,19 +22,19 @@ class FrmMain(QtWidgets.QMainWindow):
         self.pantalla5 = None
 
     def clickAgregarDistribuidor(self):
-        self.pantalla1 = FrmAgregarDistribuidores()
+        self.pantalla1 = FrmAgregarDistribuidor()
         self.pantalla1.show()
 
     def clickAgregarBodegas(self):
-        self.pantalla2 = FrmAgregarBodegas()
+        self.pantalla2 = FrmAgregarBodega()
         self.pantalla2.show()
 
     def clickAgregarArticulos(self):
-        self.pantalla3 = FrmAgregarArticulos()
+        self.pantalla3 = FrmAgregarArticulo()
         self.pantalla3.show()
 
     def clickVerDistribuidor(self):
-        self.pantalla1 = FrmVerDistribuidor()
+        self.pantalla1 = FrmVerDistribuidores()
         self.pantalla1.show()
 
     def clickVerBodegas(self):

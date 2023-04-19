@@ -11,6 +11,19 @@ class FrmAgregarDistribuidor():
         self.ui = Ui_ArticuloDialog
         self.ui.setupUi(self)
         self.oDistribuidor = None
+        self.ui.pushButton_agregar.clicked.connect()
+
+    def clickAgregar(self):
+        self.oDistribuidor = distribuidor()
+        self.oDistribuidor.nombredistribuidor = self.ui.lineEdit_nombre.text()
+        self.oDistribuidor.iddistribuidor = self.ui.lineEdit_id.text()
+        Persistencia.agregarDistribuidor(self.oDistribuidor)
+
+    def cliclCancelar(self):
+        self.ui.close()
+
+
+
 
 
 
