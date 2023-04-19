@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>504</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>-20</y>
+      <width>541</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Impact</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Bienvenido a nuestro sistema de</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>541</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Impact</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>gestion de inventario</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>150</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Favor seleccionar la opcion que desea en el menu</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>504</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Distribuidores</string>
+    </property>
+    <addaction name="actionAgregar_distribuidor"/>
+    <addaction name="actionVer_distribuidores"/>
+   </widget>
+   <widget class="QMenu" name="menuBodegas">
+    <property name="title">
+     <string>Bodegas</string>
+    </property>
+    <addaction name="actionAgregar_bodegas"/>
+    <addaction name="actionVer_bodegas"/>
+   </widget>
+   <widget class="QMenu" name="menuArticulos">
+    <property name="title">
+     <string>Articulos</string>
+    </property>
+    <addaction name="actionAgregar_articulos"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuBodegas"/>
+   <addaction name="menuArticulos"/>
+  </widget>
+  <action name="actionBodega1">
+   <property name="text">
+    <string>Bodega1</string>
+   </property>
+  </action>
+  <action name="actionAgregar_distribuidor">
+   <property name="text">
+    <string>Agregar distribuidor</string>
+   </property>
+  </action>
+  <action name="actionAgregar_bodegas">
+   <property name="text">
+    <string>Agregar bodegas</string>
+   </property>
+  </action>
+  <action name="actionVer_bodegas">
+   <property name="text">
+    <string>Ver bodegas</string>
+   </property>
+  </action>
+  <action name="actionVer_distribuidores">
+   <property name="text">
+    <string>Ver distribuidores</string>
+   </property>
+  </action>
+  <action name="actionAgregar_articulos">
+   <property name="text">
+    <string>Agregar articulos</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
